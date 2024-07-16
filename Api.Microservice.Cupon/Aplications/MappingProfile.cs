@@ -3,17 +3,11 @@ using AutoMapper;
 
 namespace Api.Microservice.Cupon.Aplications
 {
-    public class MappingProfile
+    public class MappingProfile : Profile
     {
-        public static MapperConfiguration RegisterMaps()
+        public MappingProfile()
         {
-            var mappingConfig = new MapperConfiguration(
-                config =>
-                {
-                    config.CreateMap<CuponDto, Cupon.Models.Cupon>();
-                    config.CreateMap<Cupon.Models.Cupon, CuponDto>();
-                });
-            return mappingConfig;
+            CreateMap<CuponDto, Cupon.Models.Cupon>().ReverseMap();
         }
     }
 }

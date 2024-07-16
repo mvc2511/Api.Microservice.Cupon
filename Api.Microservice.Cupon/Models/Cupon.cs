@@ -11,5 +11,9 @@ namespace Api.Microservice.Cupon.Models
         [Required]
         public double PorcentajeDescuento {  get; set; }
         public int DescuentoMinimo {  get; set; }
+        [Required]
+        public DateTime FechaInicio { get; set; }
+        [Required]
+        public DateTime FechaFin { get; set; }
     }
 }
