@@ -12,7 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Configurar AutoMapper
+ // Configurar AutoMapper
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 // Configurar DbContext
